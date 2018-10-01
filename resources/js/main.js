@@ -28,7 +28,7 @@ tCurrent.addEventListener('keyup', function(e){
 });
 
 function addItem(e){
-    if (!tCurrent) return;
+    if (!tCurrent.value) return;
     let newLI = document.createElement('LI');
     let todoIndex = Math.floor(Math.random() * procrastinationList.length);
     newLI.innerText = procrastinationList[todoIndex];
